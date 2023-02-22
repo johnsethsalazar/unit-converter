@@ -16,9 +16,9 @@ convertBtn.addEventListener("click", function(){
     let poundsResult = value * 2.204
     let kilosResult = value * 0.453592
     
-    let lengthOutput = `${value} meters = ${feetResult} feet | ${value} feet = ${meterResult} meters`
-    let volumeOuput = `${value} liters = ${gallonResult} gallons | ${value} feet = ${litersResult} liters`
-    let massOutput = `${value} kilos = ${poundsResult} pounds | ${value} pounds = ${kilosResult} kilos`
+    let lengthOutput = `${value} meters = ${feetResult.toFixed(3)} feet | ${value} feet = ${meterResult.toFixed(3)} meters`
+    let volumeOuput = `${value} liters = ${gallonResult.toFixed(3)} gallons | ${value} feet = ${litersResult.toFixed(3)} liters`
+    let massOutput = `${value} kilos = ${poundsResult.toFixed(3)} pounds | ${value} pounds = ${kilosResult.toFixed(3)} kilos`
     
     // console.log(lengthOutput)
     // console.log(volumeOuput)

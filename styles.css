@@ -78,3 +78,21 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
+
+
+/*-----------Media Queries (Medium Devices)--------------------*/
+@media screen and (max-width: 1024px){
+    #main{
+        place-content: center;
+    }
+}
+
+/*-----------Media Queries (Small Devices)--------------------*/
+@media screen and (max-width: 600px){
+    #main{
+        place-content: center;
+    }
+    h1{
+        font-size: 18px;
+    }
+}
