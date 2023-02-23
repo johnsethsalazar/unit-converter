@@ -41,7 +41,7 @@ button{
     font-size: 60px;
     text-align-last: center;
     justify-self: center;
-    border-radius: 15px;
+    border-radius: 8px;
 }
 #main{
     display: grid;
@@ -77,6 +77,10 @@ input::-webkit-inner-spin-button {
     /* display: none; <- Crashes Chrome on hover */
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.dark-mode-body{
+    
 }
 
 

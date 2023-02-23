@@ -3,6 +3,7 @@ const inputValue = document.getElementById("inputValue")
 const lengthValue = document.getElementById("length")
 const volumeValue = document.getElementById("volume")
 const massValue = document.getElementById("mass")
+const darkMode = document.getElementById("dark-mode")
 
 convertBtn.addEventListener("click", function(){
     let value = inputValue.value
@@ -28,3 +29,53 @@ convertBtn.addEventListener("click", function(){
     volumeValue.textContent = volumeOuput
     massValue.textContent = massOutput
 })
+
+darkMode.addEventListener("click", function(){
+        // if(document.body.style.background === 'black'){
+        //     document.body.style.background = 'white'
+        // }
+        // else if(document.body.style.background === 'white'){
+        //     document.body.style.background = 'white'
+        // }
+        let element = document.body
+        let btn = document.getElementById("dark-mode")
+        let output = document.getElementById("output")
+        let result = document.getElementsByClassName("result")
+        let unitName = document.getElementsByClassName("unit-name")
+        let unitResult = document.getElementsByClassName("unit-result")
+        element.classList.toggle("dark-mode-body")
+
+        if(element.classList.contains("dark-mode-body")){
+            btn.innerHTML = "Toggle Light Mode"
+            btn.style.border = "1px solid white"
+            btn.style.color = "black"
+            btn.style.background = "white"
+            output.style.background = "#1F2937"
+            for(let i=0; i<result.length; i++){
+                result[i].style.background = '#273549'
+            }
+            for(let i=0; i<unitName.length; i++){
+                unitName[i].style.color = '#CCC1FF'
+            }
+            for(let i=0; i<unitResult.length; i++){
+                unitResult[i].style.color = 'white'
+            }
+        }
+        else{
+            btn.innerHTML = "Toggle Dark Mode"
+            btn.style.border = "1px solid black"
+            btn.style.color = "white"
+            btn.style.background = "black"
+            output.style.background = "#F4F4F4"
+            for(let i=0; i<result.length; i++){
+                result[i].style.background = 'white'
+            }
+            for(let i=0; i<unitName.length; i++){
+                unitName[i].style.color = '#5A537B'
+            }
+            for(let i=0; i<unitResult.length; i++){
+                unitResult[i].style.color = '#353535'
+            }
+        }
+    }
+)
