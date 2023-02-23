@@ -20,10 +20,6 @@ convertBtn.addEventListener("click", function(){
     let lengthOutput = `${value} meters = ${feetResult.toFixed(3)} feet | ${value} feet = ${meterResult.toFixed(3)} meters`
     let volumeOuput = `${value} liters = ${gallonResult.toFixed(3)} gallons | ${value} feet = ${litersResult.toFixed(3)} liters`
     let massOutput = `${value} kilos = ${poundsResult.toFixed(3)} pounds | ${value} pounds = ${kilosResult.toFixed(3)} kilos`
-    
-    // console.log(lengthOutput)
-    // console.log(volumeOuput)
-    // console.log(massOutput) 
 
     lengthValue.textContent = lengthOutput
     volumeValue.textContent = volumeOuput
@@ -31,12 +27,6 @@ convertBtn.addEventListener("click", function(){
 })
 
 darkMode.addEventListener("click", function(){
-        // if(document.body.style.background === 'black'){
-        //     document.body.style.background = 'white'
-        // }
-        // else if(document.body.style.background === 'white'){
-        //     document.body.style.background = 'white'
-        // }
         let element = document.body
         let btn = document.getElementById("dark-mode")
         let output = document.getElementById("output")
