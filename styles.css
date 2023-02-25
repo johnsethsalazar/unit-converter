@@ -25,7 +25,7 @@ button{
     /* shadow/sm */
 
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-    border-radius: 5px;
+    border-radius: 24px;
 }
 
 #inputValue{
@@ -63,12 +63,28 @@ button{
     border-bottom-right-radius: 20px;
 }
 
+#dark-mode{
+    background: black;
+    color: white;
+    margin-top: 2em;
+}
+
 .result{
     background: white;
-    padding: 0em 0em 0em 0em;
-    margin: 1em 0em 1em 0em;
-    width: 115%;
+    padding: 1em 0em 2em 0em;
+    margin: 2em 0em 1em 0em;
+    width: 90%;
     justify-self: center;
+    border-radius: 24px;
+}
+
+.unit-name{
+    font-size: 24px;
+    margin-bottom: 1em;
+}
+
+.unit-result{
+    font-weight: 500;
 }
 
 /*remove spin button number input*/

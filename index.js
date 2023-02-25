@@ -1,9 +1,18 @@
 const convertBtn = document.getElementById("convert")
 const inputValue = document.getElementById("inputValue")
-const lengthValue = document.getElementById("length")
-const volumeValue = document.getElementById("volume")
-const massValue = document.getElementById("mass")
+// const lengthValue = document.getElementById("length")
+// const volumeValue = document.getElementById("volume")
+// const massValue = document.getElementById("mass")
 const darkMode = document.getElementById("dark-mode")
+
+const feetValue = document.getElementById("feet")
+const meterValue = document.getElementById("meter")
+
+const gallonValue = document.getElementById("gallon")
+const literValue = document.getElementById("liter")
+
+const poundValue = document.getElementById("pound")
+const kiloValue = document.getElementById("kilo")
 
 convertBtn.addEventListener("click", function(){
     let value = inputValue.value
@@ -16,14 +25,34 @@ convertBtn.addEventListener("click", function(){
     
     let poundsResult = value * 2.204
     let kilosResult = value * 0.453592
-    
-    let lengthOutput = `${value} meters = ${feetResult.toFixed(3)} feet | ${value} feet = ${meterResult.toFixed(3)} meters`
-    let volumeOuput = `${value} liters = ${gallonResult.toFixed(3)} gallons | ${value} feet = ${litersResult.toFixed(3)} liters`
-    let massOutput = `${value} kilos = ${poundsResult.toFixed(3)} pounds | ${value} pounds = ${kilosResult.toFixed(3)} kilos`
 
-    lengthValue.textContent = lengthOutput
-    volumeValue.textContent = volumeOuput
-    massValue.textContent = massOutput
+    let feetOutput = `${value} meters = ${feetResult.toFixed(3)} feet`
+    let meterOutput = `${value} feet = ${meterResult.toFixed(3)} meters`
+
+    let gallonOutput = `${value} liters = ${gallonResult.toFixed(3)} gallons`
+    let literOutput = `${value} gallons = ${litersResult.toFixed(3)} liters`
+
+    let poundOutput = `${value} kilos = ${poundsResult.toFixed(3)} pounds`
+    let kiloOutput = `${value} pounds = ${kilosResult.toFixed(3)} kilos`
+
+    feetValue.innerText = feetOutput
+    meterValue.innerText = meterOutput
+
+    gallonValue.innerText = gallonOutput
+    literValue.innerText = literOutput
+
+    poundValue.innerText = poundOutput
+    kiloValue.innerText = kiloOutput
+    
+    // let lengthOutput = `${value} meters = ${feetResult.toFixed(3)} feet | ${value} feet = ${meterResult.toFixed(3)} meters`
+    // let volumeOuput = `${value} liters = ${gallonResult.toFixed(3)} gallons | ${value} feet = ${litersResult.toFixed(3)} liters`
+    // let massOutput = `${value} kilos = ${poundsResult.toFixed(3)} pounds | ${value} pounds = ${kilosResult.toFixed(3)} kilos`
+
+    
+
+    // lengthValue.textContent = lengthOutput
+    // volumeValue.textContent = volumeOuput
+    // massValue.textContent = massOutput
 })
 
 darkMode.addEventListener("click", function(){
