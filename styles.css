@@ -87,6 +87,17 @@ button{
     font-weight: 500;
 }
 
+.ellipse1{
+    position: absolute;
+    width: 670px;
+    height: 670px;
+    left: calc(70% - 500px/2 + 868.5px);
+    top: 413px;
+
+    background: #d5cdf4;
+    filter: blur(153px);
+}
+
 /*remove spin button number input*/
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
